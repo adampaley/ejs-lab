@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title><%= RESTAURANT.name %></title>
 </head>
 <body>
-  <h1>Home Page</h1>
-  <p><</p>
+  <h1><%= RESTAURANT.name %></h1>
+  <h3>Address: <%= RESTAURANT.address %></h3>
+  <h3>Phone: <%= RESTAURANT.phone %></h3>
+  <% if (RESTAURANT.isOpen) {%>
+    <p>Yes we are open!</p>
+  <% } else { %>
+    <p>Sorry, we are close.</p>
+  <% } %>
 </body>
 </html>

@@ -14,7 +14,7 @@ You’re going to create a vibrant, interactive website for The Green Byte Bistr
 * **Menu Page**: Showcases the menu, sorted into mains, desserts, and sides.
 * **Category Page**: Generates pages for each menu type, using route parameters for content rendering.
 ## Lab exercises
-First, copy and paste the following data to be used in the lab above your `/` route in `**server.js**`:
+First, copy and paste the following data to be used in the lab above your `/` route in **`server.js`**:
 ```
 const RESTAURANT = {
   name: 'The Green Byte Bistro',
