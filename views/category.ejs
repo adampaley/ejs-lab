@@ -9,7 +9,11 @@
   <%- include('./partials/nav') %>
   <h1><%= category %></h1>
   <% menuItems.forEach((dish) => { %>
-    <h3><%= dish.name %></h3>
+    <h3><%= dish.name %>
+        <% if (dish.rating === 5) {%>
+            ⭐
+        <% } %>
+    </h3>
     <h4>$<%= dish.price %></h4>
     <p>Rating: <%= dish.rating %></p>
     <p><em><%= dish.details %></em></p>

@@ -179,3 +179,8 @@ Add your partial file to the top of the `<body>` in `home.ejs`
 3. Once in the view, use a `forEach()` loop, to render each of the menu items and their details to the page. Include `name`, `price`, `rating` and `details` for each item.
 
 4. Add the name of the category to the `<title>` of the page and to an `<h1>`.
+
+### Exercise 4: Level Up
+Some menu items have a 5 star rating from guests. These are known as “guest favorites” by the staff.
+
+1. Use inline conditional rendering to add a star emoji `"⭐"` next to the title of any menu item that has a rating of `5`.
