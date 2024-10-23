@@ -58,8 +58,19 @@ app.get('/', (req, res) => {
 });
 
 app.get('/menu', (req, res) => {
+
+  const menuFormatted = RESTAURANT.menu.reduce((acc, curr) => {
+    if(acc[curr.category]) {
+      acc[curr.category].push(curr)
+    } else {
+      acc[curr.category] = [curr]
+    }
+    return acc
+  }, {})
+  console.log(menuFormatted)
+
   res.render('menu.ejs', {
-    menu: RESTAURANT.menu
+    menu: menuFormatted
   })
 })
 
